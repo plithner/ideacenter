@@ -134,7 +134,7 @@
 		'q_notify_x_label' => 'Email me (^) if my idea gets feedback or is commented on',
 		'q_tags_comma_label' => 'Tags - use comma (,) as a separator:',
 		'q_tags_label' => 'Tags - use hyphens to combine words:',
-		'q_title_label' => 'The idea in one sentence:',
+		'q_title_label' => 'Explain your innovation idea with one sentence:',
 		'q_waiting_approval' => 'This idea is waiting for approval',
 		'q_waiting_your_approval' => 'This idea is waiting for your approval',
 		'q_your_waiting_approval' => 'Your idea will be checked and approved shortly.',
