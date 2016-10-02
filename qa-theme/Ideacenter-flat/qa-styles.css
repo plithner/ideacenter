@@ -653,9 +653,26 @@ blockquote p {
 
 */
 
+.qa-nav-main-admin .qa-nav-main-link {
+	content: '\e80a';
+	color: #125de0;
+}
+
 .qa-nav-main-admin .qa-nav-main-link:before {
 	content: '\e80a';
+	color: #125de0;
 }
+
+.qa-nav-main-admin .qa-nav-main-link.qa-nav-main-selected {
+	color: #125de0;
+	content: '\e80a';
+}
+
+.qa-nav-main-qa  {
+		display: none;
+
+}
+
 
 .qa-nav-main- .qa-nav-main-link:before {
 	content: '\e80d';
