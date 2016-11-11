@@ -1141,14 +1141,14 @@ blockquote p {
 
 @media (min-width: 800px) {
 	.qa-voting {
-		width: 68px;
+		width: 70px;
 		height: 60px;
 		line-height: 0.5;
 		float: left;
 	}
 
 	.qa-a-count {
-		width: 65px;
+		width: 70px;
 		height: 60px;
 		line-height: 0.5;
 		float: left;
@@ -1163,7 +1163,7 @@ blockquote p {
 }
 
 .qa-netvote-count-pad, .qa-a-count-pad {
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .qa-netvote-count {
