@@ -2,9 +2,9 @@
 	Q2A Market (c) Jatin Soni
 	http://www.q2amarket.com/
 
-	File:           js/snow-core.js
-	Version:        Snow 1.4
-	Description:    JavaScript helpers for SnowFlat theme
+	File:           js/flat-core.js
+	Version:        Flat
+	Description:    JavaScript helpers for Flat theme
 
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
