@@ -53,13 +53,13 @@
 		'private_message_reply' => "Click below to reply to ^f_handle by private message:\n\n^url\n\n",
 		'private_message_subject' => 'Message from ^f_handle on ^site_title',
 
-		'q_answered_body' => "Your idea on ^site_title has been given feedback by ^a_handle:\n\n^open^a_content^close\n\nYour idea was:\n\n^open^q_title^close\n\nIf you like this feedback, you may select it as the best:\n\n^url\n\nThank you,\n\n^site_title",
-		'q_answered_subject' => 'Your ^site_title idea was given feedback',
+		'q_answered_body' => "Your idea on ^site_title has been contributed to by ^a_handle:\n\n^open^a_content^close\n\nYour idea was:\n\n^open^q_title^close\n\nIf you like this feedback, you may select it as the best:\n\n^url\n\nThank you,\n\n^site_title",
+		'q_answered_subject' => 'Your ^site_title idea was contributed to',
 
 		'q_commented_body' => "Your idea on ^site_title has a new comment by ^c_handle:\n\n^open^c_content^close\n\nYour idea was:\n\n^open^c_context^close\n\nYou may respond by adding your own comment:\n\n^url\n\nThank you,\n\n^site_title",
 		'q_commented_subject' => 'Your ^site_title idea has a new comment',
 
-		'q_posted_body' => "A new idea has been asked by ^q_handle:\n\n^open^q_title\n\n^q_content^close\n\nClick below to see the idea:\n\n^url\n\nThank you,\n\n^site_title",
+		'q_posted_body' => "A new idea has been submitted by ^q_handle:\n\n^open^q_title\n\n^q_content^close\n\nClick below to see the idea:\n\n^url\n\nThank you,\n\n^site_title",
 		'q_posted_subject' => '^site_title has a new idea',
 
 		'remoderate_body' => "An edited post by ^p_handle requires your reapproval:\n\n^open^p_context^close\n\nClick below to approve or hide the edited post:\n\n^url\n\n\nClick below to review all queued posts:\n\n^a_url\n\n\nThank you,\n\n^site_title",
