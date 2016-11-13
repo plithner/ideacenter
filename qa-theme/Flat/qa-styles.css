@@ -1123,7 +1123,7 @@ blockquote p {
 }
 
 .qa-a-count-zero {
-	background-color: #e74c3c;
+	background-color: #f47466;
 }
 
 .qa-a-count-selected {
@@ -1132,7 +1132,7 @@ blockquote p {
 
 @media (max-width: 799px) {
 	.qa-voting, .qa-a-count {
-		width: 60px;
+		width: 70px;
 		height: 60px;
 		line-height: 0.5;
 		display: block;
@@ -1319,7 +1319,7 @@ blockquote p {
 }
 @media (min-width: 800px) {
 	.qa-q-item-main {
-		width: 611px;
+		width: 400px;
 	}
 }
 @media (min-width: 980px) {
@@ -1327,11 +1327,7 @@ blockquote p {
 		width: 550px;
 	}
 }
-@media (min-width: 1044px) {
-	.qa-q-item-main {
-		width: 592px;
-	}
-}
+
 
 .qa-q-item-title {
 	font-weight: bold;

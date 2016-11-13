@@ -140,10 +140,12 @@
 				'url' => qa_path_html($request),
 			),
 
+			/*
 			'hot' => array(
 				'label' => qa_lang('main/nav_hot'),
 				'url' => qa_path_html($request, array('sort' => 'hot')),
 			),
+			*/
 
 			'votes' => array(
 				'label' => qa_lang('main/nav_most_votes'),
@@ -154,11 +156,12 @@
 				'label' => qa_lang('main/nav_most_answers'),
 				'url' => qa_path_html($request, array('sort' => 'answers')),
 			),
-
+			/*
 			'views' => array(
 				'label' => qa_lang('main/nav_most_views'),
 				'url' => qa_path_html($request, array('sort' => 'views')),
 			),
+			*/
 		);
 
 		if (isset($navigation[$sort]))
