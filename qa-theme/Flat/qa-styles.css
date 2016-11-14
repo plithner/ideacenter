@@ -3262,6 +3262,7 @@ input[type="submit"], button {
 }
 
 @media (max-width: 979px) {
+	
 	.qam-ask-search-box {
 		padding: 10px 10px 0 10px;
 		display: table;
@@ -3394,11 +3395,13 @@ input[type="submit"], button {
 	}
 }
 
+
 @media (min-width: 980px) {
 	.qam-ask-search-box {
 		display: none;
 	}
 }
+
 
 @-webkit-keyframes shake {
 	0% {

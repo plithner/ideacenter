@@ -45,6 +45,14 @@ class qa_html_theme extends qa_html_theme_base
 	private $ask_search_box_class = 'turquoise';
 	// Size of the user avatar in the navigation bar
 	private $nav_bar_avatar_size = 52;
+	private $hideAskButton;
+
+	public function initialize()
+	{
+		parent::initialize();
+
+		$this->hideAskButton = in_array($this->template, array('ask'));
+	}
 
 	/**
 	 * Adding aditional meta for responsive design
@@ -599,8 +607,9 @@ class qa_html_theme extends qa_html_theme_base
 	private function qam_search($addon_class = null, $ids = null)
 	{
 		$id = isset($ids) ? ' id="' . $ids . '"' : '';
+        $forceShowStyle = $this->hideAskButton ? ' style="display:block"' : '';
 
-		$this->output('<div class="qam-search ' . $this->ask_search_box_class . ' ' . $addon_class . '"' . $id . '>');
+		$this->output('<div class="qam-search ' . $this->ask_search_box_class . ' ' . $addon_class . '"' . $id . $forceShowStyle . '>');
 		$this->search();
 		$this->output('</div>');
 	}
@@ -645,13 +654,20 @@ class qa_html_theme extends qa_html_theme_base
 	 */
 	private function ask_button()
 	{
+	if ($this->hideAskButton) {
+			$askBox = '';
+		} else {
+			$askBox =
+				'<div class="qam-ask-mobile">' .
+				'<a href="' . qa_path('ask', null, qa_path_to_root()) . '" class="' . $this->ask_search_box_class . '">' .
+				qa_lang_html('main/nav_ask') .
+				'</a>' .
+				'</div>';
+		}
+
 		return
 			'<div class="qam-ask-search-box">' .
-			'<div class="qam-ask-mobile">' .
-			'<a href="' . qa_path('ask', null, qa_path_to_root()) . '" class="' . $this->ask_search_box_class . '">' .
-			qa_lang_html('main/nav_ask') .
-			'</a>' .
-			'</div>' .
+			$askBox .
 			'<div class="qam-search-mobile ' . $this->ask_search_box_class . '" id="qam-search-mobile">' .
 			'</div>' .
 			'</div>';
