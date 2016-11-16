@@ -261,7 +261,7 @@ class qa_html_theme extends qa_html_theme_base
 		$this->output('</div> <!-- END qam-topbar -->');
 
 		$this->output($this->ask_button());
-		$this->qam_search('the-top', 'the-top-search');
+		//$this->qam_search('the-top', 'the-top-search');
 	}
 
 	/**
@@ -295,6 +295,7 @@ class qa_html_theme extends qa_html_theme_base
 		$this->output('<div id="qam-sidepanel-toggle"><i class="icon-left-open-big"></i></div>');
 		$this->output('<div class="qa-sidepanel" id="qam-sidepanel-mobile">');
 		$this->qam_search();
+		
 		$this->widgets('side', 'top');
 		$this->sidebar();
 		$this->widgets('side', 'high');
@@ -656,6 +657,7 @@ class qa_html_theme extends qa_html_theme_base
 	{
 	if ($this->hideAskButton) {
 			$askBox = '';
+			$searchBox = '';
 		} else {
 			$askBox =
 				'<div class="qam-ask-mobile">' .
@@ -663,13 +665,16 @@ class qa_html_theme extends qa_html_theme_base
 				qa_lang_html('main/nav_ask') .
 				'</a>' .
 				'</div>';
-		}
+			$searchBox = 
+			'<div class="qam-search-mobile ' . $this->ask_search_box_class . '" id="qam-search-mobile">' .
+			'</div>' .
+			'</div>';
 
+		}
 		return
 			'<div class="qam-ask-search-box">' .
 			$askBox .
-			'<div class="qam-search-mobile ' . $this->ask_search_box_class . '" id="qam-search-mobile">' .
-			'</div>' .
+            $searchBox .
 			'</div>';
 	}
 

@@ -623,15 +623,19 @@ blockquote p {
 
 
 .qa-nav-main-ask .qa-nav-main-link {
-	color: #125de0;
-	content: '\e801';
-}
+	color: #27ae60;
+	content: '\f0eb';
+	font-weight: bold;
+ }
 .qa-nav-main-ask .qa-nav-main-link:before {
-	content: '\e801';
+	color: #27ae60;
+	content: '\f0eb';
+	font-weight: bold;
 }
 .qa-nav-main-ask .qa-nav-main-link.qa-nav-main-selected {
-	color: #125de0;
-	content: '\e801';
+	color: #27ae60;
+	content: '\f0eb';
+	font-weight: bold;
 }
 /*
 
@@ -3397,10 +3401,12 @@ input[type="submit"], button {
 
 
 @media (min-width: 980px) {
-	.qam-ask-search-box {
+.qam-ask-search-box {
 		display: none;
 	}
 }
+
+
 
 
 @-webkit-keyframes shake {
@@ -3574,3 +3580,4 @@ input[type="submit"], button {
 .icon-reply:before { content: '\e823'; }
 .icon-power:before { content: '\e824'; }
 .icon-link:before { content: '\e825'; }
+.icon-lightbulb:before {content: '\f0eb'}
