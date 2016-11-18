@@ -97,7 +97,7 @@
 		'moved' => 'moved',
 		'nav_activity' => 'All Activity',
 		'nav_admin' => 'Admin',
-		'nav_ask' => 'Share an idea',
+		'nav_ask' => 'Share idea',
 		'nav_categories' => 'Categories',
 		'nav_feedback' => 'Send feedback',
 		'nav_home' => 'Home',

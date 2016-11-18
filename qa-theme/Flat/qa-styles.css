@@ -226,7 +226,7 @@ blockquote p {
 	padding: 0 40px 0 5px;
 	vertical-align: bottom;
 	width: 100%;
-	height: 36px;
+	height: 30px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: transparent;
@@ -237,13 +237,14 @@ blockquote p {
 
 .qa-search-button {
 	width: 36px;
-	height: 36px;
+	height: 30px;
 	margin: 0 !important;
 	text-indent: -9999px;
 	background: #bdc3c7 url('images/search-icon-white.png') center no-repeat;
 	border: none;
 	outline: none;
 }
+
 
 @media (max-width: 979px) {
 	.qam-search {
@@ -600,10 +601,21 @@ blockquote p {
 	color: #125de0;
 }
 
+
 .qa-nav-main-categories .qa-nav-main-link:before {
 	content: '\e808';
 	color: #125de0;
+	
 }
+.qa-nav-main-categories .qa-nav-main-link {
+	content: '\e808';
+	color: #125de0;
+}
+.qa-nav-main-categories .qa-nav-main-link.qa-nav-main-selected {
+	content: '\e808';
+	color: #125de0;
+}
+
 
 
 .qa-nav-main-user .qa-nav-main-link:before {
@@ -624,17 +636,17 @@ blockquote p {
 
 .qa-nav-main-ask .qa-nav-main-link {
 	color: #27ae60;
-	content: '\f0eb';
+	content: '\e827';
 	font-weight: bold;
  }
 .qa-nav-main-ask .qa-nav-main-link:before {
 	color: #27ae60;
-	content: '\f0eb';
+	content: '\e827';
 	font-weight: bold;
 }
 .qa-nav-main-ask .qa-nav-main-link.qa-nav-main-selected {
 	color: #27ae60;
-	content: '\f0eb';
+	content: '\e826';
 	font-weight: bold;
 }
 /*
@@ -729,8 +741,8 @@ blockquote p {
 }
 
 .qa-nav-sub {
-	background-color: #125de0;
-	text-align: left;
+	background-color: #ecf0f1;
+	text-align: center;
 	padding: 0;
 	font-size: 12px;
 }
@@ -1284,6 +1296,7 @@ blockquote p {
 	float: left;
 	padding-left: 10px;
 }
+
 @media (max-width: 240px) {
 	.qa-q-item-main {
 		width: 100%;
@@ -1316,11 +1329,13 @@ blockquote p {
 		width: 484px;
 	}
 }
+
 @media (min-width: 768px) {
 	.qa-q-item-main {
 		width: 652px;
 	}
 }
+
 @media (min-width: 800px) {
 	.qa-q-item-main {
 		width: 400px;
@@ -3580,4 +3595,3 @@ input[type="submit"], button {
 .icon-reply:before { content: '\e823'; }
 .icon-power:before { content: '\e824'; }
 .icon-link:before { content: '\e825'; }
-.icon-lightbulb:before {content: '\f0eb'}

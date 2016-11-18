@@ -261,7 +261,7 @@ class qa_html_theme extends qa_html_theme_base
 		$this->output('</div> <!-- END qam-topbar -->');
 
 		$this->output($this->ask_button());
-		//$this->qam_search('the-top', 'the-top-search');
+		$this->qam_search('the-top', 'the-top-search');
 	}
 
 	/**
@@ -307,6 +307,9 @@ class qa_html_theme extends qa_html_theme_base
 		$this->widgets('side', 'bottom');
 		$this->output('</div>', '');
 	}
+
+
+
 
 	/**
 	 * Allow alternate sidebar color.
@@ -543,7 +546,7 @@ class qa_html_theme extends qa_html_theme_base
 		// floated right
 		$this->output(
 			'<div class="qa-attribution">',
-			'Flat Theme</a>',
+
 			'</div>'
 		);
 		parent::attribution();
