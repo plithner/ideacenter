@@ -805,11 +805,12 @@ blockquote p {
 	min-height: 55px;
 	max-width: 80px;
 	padding: 2px;
-	background-color: lightgrey;
+	background-color: darkgrey;
 	text-align: center;
 }
 #qam-account-toggle:hover {
-	background: #445f7a;
+	background: darkgrey;
+    color: #125de0;
 }
 #qam-account-toggle .qam-auth-key {
 	font-size: 28px;
@@ -819,7 +820,7 @@ blockquote p {
 }
 
 .qam-account-items {
-	background-color: lightgrey;
+	background-color: darkgrey;
 	display: none;
 	position: absolute;
 	right: 0;
@@ -837,6 +838,7 @@ blockquote p {
 	line-height: 1.8;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	background-color: darkgrey;
 }
 
 .qam-account-items .qa-form-tall-button-login {

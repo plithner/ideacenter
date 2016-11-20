@@ -546,7 +546,7 @@ class qa_html_theme extends qa_html_theme_base
 		// floated right
 		$this->output(
 			'<div class="qa-attribution">',
-
+			
 			'</div>'
 		);
 		parent::attribution();
